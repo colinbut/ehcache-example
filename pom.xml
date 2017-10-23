@@ -7,25 +7,32 @@
     <version>1.0-SNAPSHOT</version>
     <name>ehcache-example</name>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <ehcache.version>3.4.0</ehcache.version>
+        <jcache.api.version>1.0.0</jcache.api.version>
+        <junit.version>4.12</junit.version>
+    </properties>
+
     <dependencies>
 
         <dependency>
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
-            <version>3.4.0</version>
+            <version>${ehcache.version}</version>
         </dependency>
 
         <!-- JCache: JSR-107 API -->
         <dependency>
             <groupId>javax.cache</groupId>
             <artifactId>cache-api</artifactId>
-            <version>1.0.0</version>
+            <version>${jcache.api.version}</version>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
