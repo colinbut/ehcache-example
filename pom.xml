@@ -15,6 +15,13 @@
             <version>3.4.0</version>
         </dependency>
 
+        <!-- JCache: JSR-107 API -->
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
